@@ -19,6 +19,11 @@
 		AB13E9D81C8DEE2E009DA4DF /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB13E9D71C8DEE2E009DA4DF /* Bookmark.swift */; };
 		AB13E9DA1C8DF172009DA4DF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB13E9D91C8DF172009DA4DF /* TableViewController.swift */; };
 		AB13E9DC1C8DF60C009DA4DF /* ShowUrlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB13E9DB1C8DF60C009DA4DF /* ShowUrlViewController.swift */; };
+		AB13E9E51C8F1D57009DA4DF /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB13E9E41C8F1D57009DA4DF /* ActionViewController.swift */; };
+		AB13E9E81C8F1D57009DA4DF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB13E9E61C8F1D57009DA4DF /* MainInterface.storyboard */; };
+		AB13E9EC1C8F1D57009DA4DF /* Bookmarker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AB13E9E21C8F1D57009DA4DF /* Bookmarker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AB13E9F21C8F1DE3009DA4DF /* BookmarkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB13E9C81C8DECF4009DA4DF /* BookmarkKit.framework */; };
+		AB13E9F41C8F1FC6009DA4DF /* GetURL.js in Resources */ = {isa = PBXBuildFile; fileRef = AB13E9F31C8F1FC6009DA4DF /* GetURL.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +33,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = AB13E9C71C8DECF4009DA4DF;
 			remoteInfo = BookmarkKit;
+		};
+		AB13E9EA1C8F1D57009DA4DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB13E9A61C8DE8EA009DA4DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB13E9E11C8F1D57009DA4DF;
+			remoteInfo = Bookmarker;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -41,6 +53,17 @@
 				AB13E9D01C8DECF4009DA4DF /* BookmarkKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB13E9F01C8F1D57009DA4DF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AB13E9EC1C8F1D57009DA4DF /* Bookmarker.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -61,6 +84,12 @@
 		AB13E9D91C8DF172009DA4DF /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		AB13E9DB1C8DF60C009DA4DF /* ShowUrlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowUrlViewController.swift; sourceTree = "<group>"; };
 		AB13E9DD1C8F127D009DA4DF /* Bookmark.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Bookmark.entitlements; sourceTree = "<group>"; };
+		AB13E9E21C8F1D57009DA4DF /* Bookmarker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Bookmarker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB13E9E41C8F1D57009DA4DF /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		AB13E9E71C8F1D57009DA4DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		AB13E9E91C8F1D57009DA4DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB13E9F11C8F1DA7009DA4DF /* Bookmarker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Bookmarker.entitlements; sourceTree = "<group>"; };
+		AB13E9F31C8F1FC6009DA4DF /* GetURL.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = GetURL.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +108,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AB13E9DF1C8F1D57009DA4DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB13E9F21C8F1DE3009DA4DF /* BookmarkKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,6 +124,7 @@
 			children = (
 				AB13E9B01C8DE8EA009DA4DF /* Bookmark */,
 				AB13E9C91C8DECF4009DA4DF /* BookmarkKit */,
+				AB13E9E31C8F1D57009DA4DF /* Bookmarker */,
 				AB13E9AF1C8DE8EA009DA4DF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +134,7 @@
 			children = (
 				AB13E9AE1C8DE8EA009DA4DF /* Bookmark.app */,
 				AB13E9C81C8DECF4009DA4DF /* BookmarkKit.framework */,
+				AB13E9E21C8F1D57009DA4DF /* Bookmarker.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +166,18 @@
 			path = BookmarkKit;
 			sourceTree = "<group>";
 		};
+		AB13E9E31C8F1D57009DA4DF /* Bookmarker */ = {
+			isa = PBXGroup;
+			children = (
+				AB13E9F11C8F1DA7009DA4DF /* Bookmarker.entitlements */,
+				AB13E9E41C8F1D57009DA4DF /* ActionViewController.swift */,
+				AB13E9E61C8F1D57009DA4DF /* MainInterface.storyboard */,
+				AB13E9E91C8F1D57009DA4DF /* Info.plist */,
+				AB13E9F31C8F1FC6009DA4DF /* GetURL.js */,
+			);
+			path = Bookmarker;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -149,11 +200,13 @@
 				AB13E9AB1C8DE8EA009DA4DF /* Frameworks */,
 				AB13E9AC1C8DE8EA009DA4DF /* Resources */,
 				AB13E9D41C8DECF4009DA4DF /* Embed Frameworks */,
+				AB13E9F01C8F1D57009DA4DF /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				AB13E9CE1C8DECF4009DA4DF /* PBXTargetDependency */,
+				AB13E9EB1C8F1D57009DA4DF /* PBXTargetDependency */,
 			);
 			name = Bookmark;
 			productName = Bookmark;
@@ -178,6 +231,23 @@
 			productReference = AB13E9C81C8DECF4009DA4DF /* BookmarkKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		AB13E9E11C8F1D57009DA4DF /* Bookmarker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB13E9ED1C8F1D57009DA4DF /* Build configuration list for PBXNativeTarget "Bookmarker" */;
+			buildPhases = (
+				AB13E9DE1C8F1D57009DA4DF /* Sources */,
+				AB13E9DF1C8F1D57009DA4DF /* Frameworks */,
+				AB13E9E01C8F1D57009DA4DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bookmarker;
+			productName = Bookmarker;
+			productReference = AB13E9E21C8F1D57009DA4DF /* Bookmarker.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,6 +270,15 @@
 					AB13E9C71C8DECF4009DA4DF = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
+					AB13E9E11C8F1D57009DA4DF = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = G8XFZ23FXY;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 				};
 			};
 			buildConfigurationList = AB13E9A91C8DE8EA009DA4DF /* Build configuration list for PBXProject "Bookmark" */;
@@ -217,6 +296,7 @@
 			targets = (
 				AB13E9AD1C8DE8EA009DA4DF /* Bookmark */,
 				AB13E9C71C8DECF4009DA4DF /* BookmarkKit */,
+				AB13E9E11C8F1D57009DA4DF /* Bookmarker */,
 			);
 		};
 /* End PBXProject section */
@@ -236,6 +316,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB13E9E01C8F1D57009DA4DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB13E9E81C8F1D57009DA4DF /* MainInterface.storyboard in Resources */,
+				AB13E9F41C8F1FC6009DA4DF /* GetURL.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +351,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AB13E9DE1C8F1D57009DA4DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB13E9E51C8F1D57009DA4DF /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -269,6 +366,11 @@
 			isa = PBXTargetDependency;
 			target = AB13E9C71C8DECF4009DA4DF /* BookmarkKit */;
 			targetProxy = AB13E9CD1C8DECF4009DA4DF /* PBXContainerItemProxy */;
+		};
+		AB13E9EB1C8F1D57009DA4DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB13E9E11C8F1D57009DA4DF /* Bookmarker */;
+			targetProxy = AB13E9EA1C8F1D57009DA4DF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -287,6 +389,14 @@
 				AB13E9BB1C8DE8EA009DA4DF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AB13E9E61C8F1D57009DA4DF /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB13E9E71C8F1D57009DA4DF /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -448,6 +558,36 @@
 			};
 			name = Release;
 		};
+		AB13E9EE1C8F1D57009DA4DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Bookmarker/Bookmarker.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Bookmarker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jampps.Bookmark.Bookmarker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AB13E9EF1C8F1D57009DA4DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Bookmarker/Bookmarker.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Bookmarker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jampps.Bookmark.Bookmarker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -473,6 +613,14 @@
 			buildConfigurations = (
 				AB13E9D21C8DECF4009DA4DF /* Debug */,
 				AB13E9D31C8DECF4009DA4DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AB13E9ED1C8F1D57009DA4DF /* Build configuration list for PBXNativeTarget "Bookmarker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB13E9EE1C8F1D57009DA4DF /* Debug */,
+				AB13E9EF1C8F1D57009DA4DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
