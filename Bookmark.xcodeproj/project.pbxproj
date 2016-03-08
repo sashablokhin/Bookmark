@@ -24,6 +24,9 @@
 		AB13E9EC1C8F1D57009DA4DF /* Bookmarker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AB13E9E21C8F1D57009DA4DF /* Bookmarker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AB13E9F21C8F1DE3009DA4DF /* BookmarkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB13E9C81C8DECF4009DA4DF /* BookmarkKit.framework */; };
 		AB13E9F41C8F1FC6009DA4DF /* GetURL.js in Resources */ = {isa = PBXBuildFile; fileRef = AB13E9F31C8F1FC6009DA4DF /* GetURL.js */; };
+		AB13E9FC1C8F3826009DA4DF /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB13E9FB1C8F3826009DA4DF /* ActionRequestHandler.swift */; };
+		AB13E9FE1C8F3826009DA4DF /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = AB13E9FD1C8F3826009DA4DF /* Action.js */; };
+		AB13EA021C8F3826009DA4DF /* Capitalize.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AB13E9F91C8F3826009DA4DF /* Capitalize.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = AB13E9E11C8F1D57009DA4DF;
 			remoteInfo = Bookmarker;
+		};
+		AB13EA001C8F3826009DA4DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB13E9A61C8DE8EA009DA4DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB13E9F81C8F3826009DA4DF;
+			remoteInfo = Capitalize;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -61,6 +71,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				AB13EA021C8F3826009DA4DF /* Capitalize.appex in Embed App Extensions */,
 				AB13E9EC1C8F1D57009DA4DF /* Bookmarker.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -90,6 +101,10 @@
 		AB13E9E91C8F1D57009DA4DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB13E9F11C8F1DA7009DA4DF /* Bookmarker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Bookmarker.entitlements; sourceTree = "<group>"; };
 		AB13E9F31C8F1FC6009DA4DF /* GetURL.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = GetURL.js; sourceTree = "<group>"; };
+		AB13E9F91C8F3826009DA4DF /* Capitalize.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Capitalize.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB13E9FB1C8F3826009DA4DF /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
+		AB13E9FD1C8F3826009DA4DF /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
+		AB13E9FF1C8F3826009DA4DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +131,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AB13E9F61C8F3826009DA4DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -125,6 +147,7 @@
 				AB13E9B01C8DE8EA009DA4DF /* Bookmark */,
 				AB13E9C91C8DECF4009DA4DF /* BookmarkKit */,
 				AB13E9E31C8F1D57009DA4DF /* Bookmarker */,
+				AB13E9FA1C8F3826009DA4DF /* Capitalize */,
 				AB13E9AF1C8DE8EA009DA4DF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -135,6 +158,7 @@
 				AB13E9AE1C8DE8EA009DA4DF /* Bookmark.app */,
 				AB13E9C81C8DECF4009DA4DF /* BookmarkKit.framework */,
 				AB13E9E21C8F1D57009DA4DF /* Bookmarker.appex */,
+				AB13E9F91C8F3826009DA4DF /* Capitalize.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,6 +202,16 @@
 			path = Bookmarker;
 			sourceTree = "<group>";
 		};
+		AB13E9FA1C8F3826009DA4DF /* Capitalize */ = {
+			isa = PBXGroup;
+			children = (
+				AB13E9FB1C8F3826009DA4DF /* ActionRequestHandler.swift */,
+				AB13E9FD1C8F3826009DA4DF /* Action.js */,
+				AB13E9FF1C8F3826009DA4DF /* Info.plist */,
+			);
+			path = Capitalize;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -207,6 +241,7 @@
 			dependencies = (
 				AB13E9CE1C8DECF4009DA4DF /* PBXTargetDependency */,
 				AB13E9EB1C8F1D57009DA4DF /* PBXTargetDependency */,
+				AB13EA011C8F3826009DA4DF /* PBXTargetDependency */,
 			);
 			name = Bookmark;
 			productName = Bookmark;
@@ -248,6 +283,23 @@
 			productReference = AB13E9E21C8F1D57009DA4DF /* Bookmarker.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		AB13E9F81C8F3826009DA4DF /* Capitalize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB13EA031C8F3827009DA4DF /* Build configuration list for PBXNativeTarget "Capitalize" */;
+			buildPhases = (
+				AB13E9F51C8F3826009DA4DF /* Sources */,
+				AB13E9F61C8F3826009DA4DF /* Frameworks */,
+				AB13E9F71C8F3826009DA4DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Capitalize;
+			productName = Capitalize;
+			productReference = AB13E9F91C8F3826009DA4DF /* Capitalize.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -279,6 +331,10 @@
 							};
 						};
 					};
+					AB13E9F81C8F3826009DA4DF = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = G8XFZ23FXY;
+					};
 				};
 			};
 			buildConfigurationList = AB13E9A91C8DE8EA009DA4DF /* Build configuration list for PBXProject "Bookmark" */;
@@ -297,6 +353,7 @@
 				AB13E9AD1C8DE8EA009DA4DF /* Bookmark */,
 				AB13E9C71C8DECF4009DA4DF /* BookmarkKit */,
 				AB13E9E11C8F1D57009DA4DF /* Bookmarker */,
+				AB13E9F81C8F3826009DA4DF /* Capitalize */,
 			);
 		};
 /* End PBXProject section */
@@ -325,6 +382,14 @@
 			files = (
 				AB13E9E81C8F1D57009DA4DF /* MainInterface.storyboard in Resources */,
 				AB13E9F41C8F1FC6009DA4DF /* GetURL.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB13E9F71C8F3826009DA4DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB13E9FE1C8F3826009DA4DF /* Action.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +424,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AB13E9F51C8F3826009DA4DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB13E9FC1C8F3826009DA4DF /* ActionRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -371,6 +444,11 @@
 			isa = PBXTargetDependency;
 			target = AB13E9E11C8F1D57009DA4DF /* Bookmarker */;
 			targetProxy = AB13E9EA1C8F1D57009DA4DF /* PBXContainerItemProxy */;
+		};
+		AB13EA011C8F3826009DA4DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB13E9F81C8F3826009DA4DF /* Capitalize */;
+			targetProxy = AB13EA001C8F3826009DA4DF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -588,6 +666,32 @@
 			};
 			name = Release;
 		};
+		AB13EA041C8F3827009DA4DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Capitalize/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jampps.Bookmark.Capitalize;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AB13EA051C8F3827009DA4DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Capitalize/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jampps.Bookmark.Capitalize;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -621,6 +725,14 @@
 			buildConfigurations = (
 				AB13E9EE1C8F1D57009DA4DF /* Debug */,
 				AB13E9EF1C8F1D57009DA4DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AB13EA031C8F3827009DA4DF /* Build configuration list for PBXNativeTarget "Capitalize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB13EA041C8F3827009DA4DF /* Debug */,
+				AB13EA051C8F3827009DA4DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
