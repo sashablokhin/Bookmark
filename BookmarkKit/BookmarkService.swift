@@ -58,8 +58,8 @@ public class BookmarkService {
     }
     
     func getFileUrl() -> NSURL {
-        if let containerUrl = NSFileManager.defaultManager().containerURLForSecurityApplicationGroupIdentifier("group.com.appcoda.Bookmark") {
-            return containerUrl.URLByAppendingPathComponent("AppcodaBookmarkService.dat")
+        if let containerUrl = NSFileManager.defaultManager().containerURLForSecurityApplicationGroupIdentifier("group.com.jampps.Bookmark") {
+            return containerUrl.URLByAppendingPathComponent("BookmarkService.dat")
         } else {
             fatalError("Error obtaining shared container URL. Check your App Group configuration.")
         }

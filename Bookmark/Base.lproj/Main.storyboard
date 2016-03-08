@@ -18,14 +18,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJG-Ci-glS">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="kJG-Ci-glS" secondAttribute="trailing" id="3Bj-hu-EcJ"/>
-                            <constraint firstItem="kJG-Ci-glS" firstAttribute="top" secondItem="BCY-yj-seK" secondAttribute="bottom" id="8aC-50-4j4"/>
+                            <constraint firstItem="kJG-Ci-glS" firstAttribute="top" secondItem="BCY-yj-seK" secondAttribute="bottom" constant="-64" id="8aC-50-4j4"/>
                             <constraint firstItem="XJu-jR-lDx" firstAttribute="top" secondItem="kJG-Ci-glS" secondAttribute="bottom" id="I28-ry-geM"/>
                             <constraint firstItem="kJG-Ci-glS" firstAttribute="leading" secondItem="23J-dp-DuT" secondAttribute="leading" id="aFL-44-CI4"/>
                         </constraints>
@@ -141,7 +141,7 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="yql-oo-L5r" kind="show" identifier="showUrl" id="Pr1-34-dGR"/>
+                        <segue destination="yql-oo-L5r" kind="show" identifier="openURL" id="Pr1-34-dGR"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5bI-f3-dFf" userLabel="First Responder" sceneMemberID="firstResponder"/>
